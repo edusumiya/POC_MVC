@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hkg-2g-cTG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character View Controller-->
+        <scene sceneID="P50-BZ-IZo">
+            <objects>
+                <viewController id="hkg-2g-cTG" customClass="CharacterViewController" customModule="POC_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8n-fG-6yk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mw9-f2-bG8">
+                                <rect key="frame" x="16" y="20" width="343" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyu-at-5hb">
+                                <rect key="frame" x="16" y="95" width="343" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCZ-5v-7tD">
+                                <rect key="frame" x="16" y="54" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M8A-OF-uEr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFy-ea-VzM">
+                                <rect key="frame" x="16" y="129" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HIN-kd-C3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz2-F2-pCl">
+                                <rect key="frame" x="16" y="204" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sJ6-i7-66Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cor do Cabelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUx-Lj-1ce">
+                                <rect key="frame" x="16" y="170" width="343" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YFy-ea-VzM" firstAttribute="top" secondItem="uyu-at-5hb" secondAttribute="bottom" constant="10" id="0Dm-HK-whY"/>
+                            <constraint firstItem="uyu-at-5hb" firstAttribute="top" secondItem="xCZ-5v-7tD" secondAttribute="bottom" constant="20" id="3gO-g9-2DJ"/>
+                            <constraint firstItem="9az-Sl-ZmN" firstAttribute="trailing" secondItem="pUx-Lj-1ce" secondAttribute="trailing" constant="16" id="Coc-Q2-BZ9"/>
+                            <constraint firstItem="9az-Sl-ZmN" firstAttribute="trailing" secondItem="mw9-f2-bG8" secondAttribute="trailing" constant="16" id="ER6-kE-tZZ"/>
+                            <constraint firstItem="uyu-at-5hb" firstAttribute="leading" secondItem="9az-Sl-ZmN" secondAttribute="leading" constant="16" id="LXV-vn-M6u"/>
+                            <constraint firstItem="pUx-Lj-1ce" firstAttribute="top" secondItem="YFy-ea-VzM" secondAttribute="bottom" constant="20" id="M7x-13-tyd"/>
+                            <constraint firstItem="Jz2-F2-pCl" firstAttribute="leading" secondItem="9az-Sl-ZmN" secondAttribute="leading" constant="16" id="QqR-A6-K2h"/>
+                            <constraint firstItem="YFy-ea-VzM" firstAttribute="leading" secondItem="9az-Sl-ZmN" secondAttribute="leading" constant="16" id="ZpE-Fm-1nq"/>
+                            <constraint firstItem="9az-Sl-ZmN" firstAttribute="trailing" secondItem="uyu-at-5hb" secondAttribute="trailing" constant="16" id="buB-ij-uXJ"/>
+                            <constraint firstItem="pUx-Lj-1ce" firstAttribute="leading" secondItem="9az-Sl-ZmN" secondAttribute="leading" constant="16" id="dWz-Z8-QcM"/>
+                            <constraint firstItem="Jz2-F2-pCl" firstAttribute="top" secondItem="pUx-Lj-1ce" secondAttribute="bottom" constant="10" id="dsM-T3-qBN"/>
+                            <constraint firstItem="9az-Sl-ZmN" firstAttribute="trailing" secondItem="YFy-ea-VzM" secondAttribute="trailing" constant="16" id="eP1-L4-pzo"/>
+                            <constraint firstItem="mw9-f2-bG8" firstAttribute="top" secondItem="9az-Sl-ZmN" secondAttribute="top" id="fi4-wA-GUP"/>
+                            <constraint firstItem="mw9-f2-bG8" firstAttribute="leading" secondItem="9az-Sl-ZmN" secondAttribute="leading" constant="16" id="ms6-Lt-9HC"/>
+                            <constraint firstItem="xCZ-5v-7tD" firstAttribute="leading" secondItem="9az-Sl-ZmN" secondAttribute="leading" constant="16" id="oIw-zB-Ll8"/>
+                            <constraint firstItem="xCZ-5v-7tD" firstAttribute="top" secondItem="mw9-f2-bG8" secondAttribute="bottom" constant="10" id="r6A-IX-RWd"/>
+                            <constraint firstItem="9az-Sl-ZmN" firstAttribute="trailing" secondItem="Jz2-F2-pCl" secondAttribute="trailing" constant="16" id="ryS-05-AdU"/>
+                            <constraint firstItem="9az-Sl-ZmN" firstAttribute="trailing" secondItem="xCZ-5v-7tD" secondAttribute="trailing" constant="16" id="vLK-bB-rJP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9az-Sl-ZmN"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblHairColor" destination="Jz2-F2-pCl" id="wBc-sv-BtO"/>
+                        <outlet property="lblHeight" destination="YFy-ea-VzM" id="6mv-WC-uip"/>
+                        <outlet property="lblName" destination="xCZ-5v-7tD" id="Pl9-k4-Klb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLX-ef-p6V" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
